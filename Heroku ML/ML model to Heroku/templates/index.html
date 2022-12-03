@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scaled=1.0">
+        <title>Water Amount Prediction</title>
+    </head>
+<body>
+    <h1>Prediction of Water Amount</h1>
+    <p> Enter your Environment Variables Values</p>
+    <form action="/" method="POST">
+        <input type="text" name="cpday" placeholder="Crop Life">
+        <input type="text" name="sm" placeholder="Soil Moisture">
+        <input type="text" name="temp" placeholder="Temperature">
+        <input type="text" name="humi" placeholder="Humidity">
+        <input type="text" name="tempmax" placeholder="TemperatureMax">
+        <input type="text" name="tempmin" placeholder="TemperatureMin">
+        <input type="text" name="evapo" placeholder="Evapotranspiration">
+        <input type="text" name="cpfactor" placeholder="Crop Factor">
+        <input type="submit">
+    </form>
+
+    <h3> Predicted Water Amount = {{ n }} </h3>
+</body>
+</html>
