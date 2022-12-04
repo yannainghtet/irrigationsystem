@@ -1,6 +1,7 @@
 from flask import Flask, render_template , request
 import machinelearning
 app = Flask(__name__)
+app = app.server
 wateramount =0
 @app.route("/", methods = ["GET","POST"])
 def predict():
